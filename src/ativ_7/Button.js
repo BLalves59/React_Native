@@ -10,8 +10,8 @@ export default function Button(props) {
     if (props.triple) stylesbutton.push(styles.buttonTriple);
     if (props.operation) stylesbutton.push(styles.operationButton);
     return(
-        <TouchableHighlight onPress={props.onClick}>
-            <Text style={styles.button}>{props.label1}</Text>
+        <TouchableHighlight onPress={() => props.onClick(props.label)}>
+            <Text style={styles.button}>{props.label}</Text>
         </TouchableHighlight>
     );
 }
@@ -28,22 +28,5 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#888',
       },
-      container: {
-        flex: 1,
-        backgroundColor: '#FFF',
-      },
-      buttons: {
-        flexDirection: 'row',
-        flexWrap: 'wrap'
-      },
-      operationButton: {
-        color: '#FFF',
-        backgroundColor: '#FA8231',
-      },
-      buttonDouble: {
-        width: ((Dimensions.get('window').width /4) -4) * 2,
-      },
-      buttonTriple: {
-        width: ((Dimensions.get('window').width /4) -4) * 3,
-      },
+      
 });

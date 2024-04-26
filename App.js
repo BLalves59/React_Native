@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingTop: ConstantSourceNode.statusBarHeight,
+    // paddingTop: ConstantSourceNode.statusBarHeight,
     backgroundColor: '#AAA',
     padding: 8,
+    alignItems: 'center',
   },
 });
 
