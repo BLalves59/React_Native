@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "react_native-main/react_native-main",
+			"problemMatcher": [],
+			"label": "npm: start - react_native-main/react_native-main",
+			"detail": "expo start",
+			"group": "build"
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "react_native-main/react_native-main",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: install - react_native-main/react_native-main",
+			"detail": "install dependencies from package"
+		}
+	]
+}
