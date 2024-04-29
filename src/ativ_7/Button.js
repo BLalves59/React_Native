@@ -24,10 +24,10 @@ const windowWidth = Dimensions.get('window').width;
 const styles = StyleSheet.create({
     button: {
         fontSize: RFPercentage(5),
-        // height: (Dimensions.get('window').width / 4) - 4,
-        // width: (Dimensions.get('window').width / 4) - 4,
-        width: Dimensions.get('window').width / 4,
-        height: Dimensions.get('window').width / 4,
+        height: (Dimensions.get('window').width / 4) - 4,
+        width: (Dimensions.get('window').width / 4) - 4,
+        // width: Dimensions.get('window').width / 4,
+        // height: Dimensions.get('window').width / 4,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
