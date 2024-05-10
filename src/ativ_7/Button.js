@@ -24,8 +24,8 @@ const windowWidth = Dimensions.get('window').width;
 const styles = StyleSheet.create({
     button: {
         fontSize: RFPercentage(5),
-        height: (Dimensions.get('window').width / 4) - 4,
-        width: (Dimensions.get('window').width / 4) - 4,
+        height: (Dimensions.get('window').width / 4) ,
+        width: (Dimensions.get('window').width / 4) ,
         // width: Dimensions.get('window').width / 4,
         // height: Dimensions.get('window').width / 4,
         justifyContent: 'center',
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
         borderColor: '#888',
     },
     buttonDouble: {
-        width: (windowWidth / 5) * 2,
+        width: (windowWidth / 4) * 2,
     },
     buttonTriple: {
-        width: (windowWidth / 5) * 3,
+        width: (windowWidth / 4) * 3,
     },
     operationButton: {
         backgroundColor: '#FA8231',
