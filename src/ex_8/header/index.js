@@ -2,10 +2,14 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 
-export default function Header () {
+export default function Header ({titulo}) {
     return (
         <View style={styles.container}>
-            <Text style={styles.texto}>Lista de compras</Text>
+            <Text style={styles.texto}>{titulo}</Text>
         </View>
     );
+}
+
+Header.defaultProps = {
+    titulo: 'lista de compras'
 }
