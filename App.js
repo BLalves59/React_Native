@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Navegacao from './src/rotas/stackNavigation';
+
 // import Props from './src/ex_2';
 // import Ativ_1 from './src/ativ1';
 // import Exemplo_3 from './src/ex_3';
@@ -12,12 +14,13 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Exemplo5 from './src/ativ5_Professor';
 // import Exemplo_6 from './src/ex_6';
 // import Atividade_7 from './src/ativ_7';
-import Exemplo8 from './src/ex_8';
+// import Exemplo8 from './src/ex_8';
+// import Exemplo_8 from './src/ex_8.2';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo8 />
+      <Navegacao />
       <StatusBar style="auto" />
     </View>
   );
