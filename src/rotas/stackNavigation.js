@@ -1,4 +1,3 @@
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Exemplos from '../exemplos';
@@ -10,11 +9,18 @@ import Exemplo_6 from '../ex_6';
 import Atividade_7 from '../ativ_7';
 import Exemplo_8 from '../ex_8.2';
 
+import Atividade1 from '../ativ1';
+import Atividade3 from '../ativ3';
+import Atividade4 from '../ativ4';
+import Atividade5 from '../ativ_5';
+import Atividade7 from '../ativ_7';
+import Ativ_1 from '../ativ1';
+import Ativ_3 from '../ativ3';
+
 const Stack = createNativeStackNavigator();
 
 export default function Navegacao() {
   return (
-    <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name="Ex0" component={Exemplos} options={{title: 'E X E M P L O S'}}/>
             <Stack.Screen name="Ex2" component={Exemplo2} options={{title: 'E X E M P L O  2'}}/>
@@ -24,8 +30,12 @@ export default function Navegacao() {
             <Stack.Screen name="Ex6" component={Exemplo_6} options={{title: 'E X E M P L O 6'}}/>
             <Stack.Screen name="Ex7" component={Atividade_7} options={{title: 'E X E M P L O 7'}}/>
             <Stack.Screen name="Ex8" component={Exemplo_8} options={{title: 'E X E M P L O 8'}}/>
-            
+
+            <Stack.Screen name="Ativ1" component={Ativ_1} options={{title: 'E X E M P L O 8'}}/>
+            <Stack.Screen name="Ativ3" component={Ativ_3} options={{title: 'E X E M P L O 8'}}/>
+            <Stack.Screen name="Ativ4" component={Atividade4} options={{title: 'E X E M P L O 8'}}/>
+            <Stack.Screen name="Ativ5" component={Atividade5} options={{title: 'E X E M P L O 8'}}/>
+            <Stack.Screen name="Ativ7" component={Atividade_7} options={{title: 'E X E M P L O 8'}}/>
         </Stack.Navigator>
-    </NavigationContainer>
   );
 }
