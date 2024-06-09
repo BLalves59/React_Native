@@ -4,16 +4,16 @@ import styles from './styles';
 export default function Atividades({navigation}) {
     return(
         <View style={styles.container}>
-            <Text>Exemplos</Text>
+            <Text>Atividades</Text>
 
-            <Pressable onPress={() => navigation.navigate('ativ_1')} style={styles.botao}>
-                <Text style={styles.txtBotao}>Exemplo 2</Text>
+            <Pressable onPress={() => navigation.navigate('ativ1')} style={styles.botao}>
+                <Text style={styles.txtBotao}>ativ1</Text>
             </Pressable>
-            <Pressable onPress={() => navigation.navigate('Ex3')}style={styles.botao}>
-                <Text style={styles.txtBotao}>Exemplo 3</Text>
+            <Pressable onPress={() => navigation.navigate('ativ3')}style={styles.botao}>
+                <Text style={styles.txtBotao}>ativ3</Text>
             </Pressable>
-            <Pressable onPress={() => navigation.navigate('Ex4')}style={styles.botao}>
-                <Text style={styles.txtBotao}>Exemplo 4</Text>
+            <Pressable onPress={() => navigation.navigate('ativ4')}style={styles.botao}>
+                <Text style={styles.txtBotao}>ativ4</Text>
             </Pressable>
         </View>
     );
