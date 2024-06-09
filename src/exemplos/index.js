@@ -6,7 +6,7 @@ export default function Exemplos({navigation}) {
         <View style={styles.container}>
             <Text>Exemplos</Text>
 
-            <Pressable onPress={() => navigation.navigate('Ex2')} style={styles.botao}>
+            <Pressable onPress={() => navigation.navigate('Ex8')} style={styles.botao}>
                 <Text style={styles.txtBotao}>Exemplo 2</Text>
             </Pressable>
             <Pressable onPress={() => navigation.navigate('Ex3')}style={styles.botao}>

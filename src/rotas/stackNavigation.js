@@ -9,13 +9,12 @@ import Exemplo_6 from '../ex_6';
 import Atividade_7 from '../ativ_7';
 import Exemplo_8 from '../ex_8.2';
 
-import Atividade1 from '../ativ1';
-import Atividade3 from '../ativ3';
+import Ativ_1 from '../ativ1';
+import Ativ_3 from '../ativ3';
 import Atividade4 from '../ativ4';
 import Atividade5 from '../ativ_5';
 import Atividade7 from '../ativ_7';
-import Ativ_1 from '../ativ1';
-import Ativ_3 from '../ativ3';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -35,7 +34,7 @@ export default function Navegacao() {
             <Stack.Screen name="Ativ3" component={Ativ_3} options={{title: 'E X E M P L O 8'}}/>
             <Stack.Screen name="Ativ4" component={Atividade4} options={{title: 'E X E M P L O 8'}}/>
             <Stack.Screen name="Ativ5" component={Atividade5} options={{title: 'E X E M P L O 8'}}/>
-            <Stack.Screen name="Ativ7" component={Atividade_7} options={{title: 'E X E M P L O 8'}}/>
+            <Stack.Screen name="Ativ7" component={Atividade7} options={{title: 'E X E M P L O 8'}}/>
         </Stack.Navigator>
   );
 }
