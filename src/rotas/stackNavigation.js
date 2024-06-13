@@ -36,5 +36,6 @@ export default function Navegacao() {
             <Stack.Screen name="Ativ5" component={Atividade5} options={{title: 'A T I V I D A D E 5'}}/>
             <Stack.Screen name="Ativ7" component={Atividade7} options={{title: 'A T I V I D A D E 7'}}/>
         </Stack.Navigator>
+        
   );
 }
