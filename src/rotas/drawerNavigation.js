@@ -1,7 +1,7 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-import StackNavigation from '../rotas/stackNavigation';
+import createBottomTabNavigator from '../rotas/bottonTabNavigation'
 import Sobre from '../sobre';
 
 const Drawer = createDrawerNavigator();
@@ -10,8 +10,8 @@ export default function DrawerNavigation() {
   return (
     <NavigationContainer>
         <Drawer.Navigator>
-        <Drawer.Screen name="Feed" component={StackNavigation} />
-        <Drawer.Screen name="Article" component={Sobre} />
+        <Drawer.Screen name="Home" component={createBottomTabNavigator} />
+        <Drawer.Screen name="Sobre" component={Sobre} />
         </Drawer.Navigator>
     </NavigationContainer>
   );
